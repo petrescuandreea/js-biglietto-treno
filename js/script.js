@@ -13,7 +13,7 @@ const unitPrice = 0.21;
 
 
 // I ask how many km does the passenger want to do 
-const km = parseInt(prompt("How many km are you going to do?"));
+const km = parseDouble(prompt("How many km are you going to do?"));
 console.log("km travelled by the passenger:", km);
 
 
@@ -29,7 +29,7 @@ const over65Discount = 0.4;
 let totalPrice;
 
 
-if (age <= 18) {
+if (age < 18) {
 
     totalPrice = ticketCost - underageDiscount;
     element.innerHTML=`The ticket price is: ${totalPrice} &#8364;`;
