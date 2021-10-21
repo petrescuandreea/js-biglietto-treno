@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    background-image: url("../img/bk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticket-container{
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+#logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo  {
+    width: 20%;
+    margin: 10px;
+}
+
+#train {
+    width: 15%;
+}
+
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#discounts {
+    float:left;
+    width: 45%;
+}
+h1 {
+    text-align: center;
+    color: darkcyan;
+}
+
+#new {
+    height: 300px;
+    margin: 15px 0;
+    
+}
+
+#new::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    float:left;
+    width: calc(90% / 2);
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 0 5px;
+
+}
+
+
+.content-card {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45) ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    padding: 10px;
+}
+
+.content-card h2 {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.content-card div {
+    font-size: 13px;
+}
+
+
+#underage {
+    background-image: url("../img/young.jpg");
+}
+
+#over65{
+    background-image: url("../img/over.jpg");
+}
+
+
+
+#info-ticket {
+    float:left;
+    width: 55%;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+#base-ticket {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65) ;
+    border-radius: 15px;
+    margin: 55px 20px 15px 20px;
+    padding: 10px 5px;
+}
+
+#train-ticket {
+    background-color: rgba(0,139,139,0.5);
+    font-weight: bold;
+    padding: 20px 80px;
+    margin: 0 20px 40px 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color:firebrick;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    padding: 10px 15px;
+}
